@@ -19,12 +19,10 @@ class Contact {
   }
 
   static readContacts() {
-   e
     try {
       const data = fs.readFileSync(dataPath, 'utf8');
       return JSON.parse(data);
     } catch (error) {
-      
       return [];
     }
   }
