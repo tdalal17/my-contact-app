@@ -1,8 +1,5 @@
 extends layout
 
 block content
-  h1=title
-  ul
-    each contact in contacts
-      li
-        a(href=`/contacts/${contact.id}`) #{contact.firstName} #{contact.lastName}
+  h1= contact.firstName + ' ' + contact.lastName
+  // Add more details as needed
