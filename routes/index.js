@@ -30,6 +30,10 @@ router.get('/contacts/new', function(req, res) {
   res.render('create-contact', { title: 'Add New Contact' });
 });
 
-
+router.post('/contacts', function(req, res) {
+  const newContact = new Contact(req.body.firstName, req.body.lastName, req.body.email, req.body.notes);
+  newContact.save();
+  res.redirect('/contacts');
+});
 
 module.exports = router;
