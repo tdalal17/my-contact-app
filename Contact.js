@@ -60,6 +60,11 @@ class Contact {
     Contact.writeContacts(contacts);
     return contacts[contactIndex];
   }
+  static deleteById(contactId) {
+    let contacts = Contact.readContacts();
+    contacts = contacts.filter(contact => contact.id !== contactId);
+    Contact.writeContacts(contacts);
+  }
 }
 
 module.exports = Contact;
