@@ -50,4 +50,9 @@ router.post('/contacts/:id', function(req, res) {
   res.redirect('/contacts');
 });
 
+router.post('/contacts/:id/delete', function(req, res) {
+  Contact.deleteById(parseInt(req.params.id));
+  res.redirect('/contacts');
+});
+
 module.exports = router;
