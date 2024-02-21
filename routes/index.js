@@ -45,4 +45,9 @@ router.get('/contacts/:id/edit', function(req, res) {
   }
 });
 
+router.post('/contacts/:id', function(req, res) {
+  Contact.updateById(parseInt(req.params.id), req.body);
+  res.redirect('/contacts');
+});
+
 module.exports = router;
