@@ -9,3 +9,9 @@ block content
         p Email: #{contact.email}
         p Notes: #{contact.notes}
         p dateCreated #{contact.dateCreated}
+
+        a(href=`/contacts/${contact.id}/edit`) Edit
+
+        form(method='POST', action=`/contacts/${contact.id}/delete`)
+        input(type='hidden', name='_method', value='DELETE')
+        button(type='submit') Delete
