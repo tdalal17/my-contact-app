@@ -17,3 +17,6 @@ block content
         label(for='notes') Notes
         textarea#notes.form-control(name='notes')
       button.btn.btn-primary(type='submit') Add Contact
+      router.get('/contacts/new', function(req, res) {
+    res.render('create-contact', { title: 'Add New Contact' });
+});
