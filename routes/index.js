@@ -25,5 +25,11 @@ router.get('/contacts/:id', function(req, res, next) {
   }
 });
 
+// GET request to display the form for creating a new contact
+router.get('/contacts/new', function(req, res) {
+  res.render('create-contact', { title: 'Add New Contact' });
+});
+
+
 
 module.exports = router;
