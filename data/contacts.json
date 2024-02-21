@@ -1,19 +1,18 @@
 [
-    {
-      "id": 1,
-      "firstName": "Chota",
-      "lastName": "Don",
-      "email": "Chota.Don@example.com",
-      "notes": "Sample note about Chota.",
-      "dateCreated": "2021-01-01T00:00:00.000Z"
-    },
-    {
-      "id": 2,
-      "firstName": "Moti",
-      "lastName": "Kon",
-      "email": "Moti.Kno@example.com",
-      "notes": "Sample note about Moti.",
-      "dateCreated": "2021-01-02T00:00:00.000Z"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "firstName": "Chota",
+    "lastName": "Don",
+    "email": "Chota.Don@example.com",
+    "notes": "Sample note about Chota.",
+    "dateCreated": "2024-02-21T20:59:57.322Z"
+  },
+  {
+    "id": 2,
+    "firstName": "Moti",
+    "lastName": "Kon",
+    "email": "Moti.Kno@example.com",
+    "notes": "Sample note about Moti.",
+    "dateCreated": "2024-02-21T21:00:00.404Z"
+  }
+]
