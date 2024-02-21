@@ -36,4 +36,13 @@ router.post('/contacts', function(req, res) {
   res.redirect('/contacts');
 });
 
+router.get('/contacts/:id/edit', function(req, res) {
+  const contact = Contact.findById(parseInt(req.params.id));
+  if (contact) {
+    res.render('edit-contact', { title: 'Edit Contact', contact });
+  } else {
+    res.redirect('/contacts');
+  }
+});
+
 module.exports = router;
