@@ -3,6 +3,8 @@ extends layout
 block content
   .container
     h1 All Contacts
+
+    // code for displaying contacts
     each contact in contacts
       .contact-box
         h2 #{contact.firstName} #{contact.lastName}
@@ -14,3 +16,6 @@ block content
 
         form(method='POST', action=`/contacts/${contact.id}/delete`)
           button(type='submit') Delete
+
+    // Add the "Create New Contact" button
+    a.btn.btn-primary(href='/contacts/new') Create New Contact
