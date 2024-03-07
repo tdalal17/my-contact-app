@@ -4,7 +4,7 @@
 - **Name:** Tanay Dalal
 - **Email:** tdalal@hawk.iit.edu
 - **Class:** ITMD-442
-- **Assignment:** Lab-2
+- **Assignment:** Lab-3
 - **Git Repository URL:** https://github.com/tdalal17/my-contact-app
 
 ## Project Description
