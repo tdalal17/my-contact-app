@@ -52,7 +52,7 @@ class Contact {
   static updateById(contactId, updateData) {
     
     const contacts = Contact.readContacts();
-    const contactIndex = contacts.findIndex(contact => contact.id === contactId);
+    const contactIndex = contacts.findIndex(contact => contact.id === contactId.toString());
     if (contactIndex === -1) return null;
 
     

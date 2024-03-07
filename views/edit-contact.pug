@@ -3,10 +3,24 @@ extends layout
 block content
   .container
     h1 Edit Contact
-    form(method='POST', action=`/contacts/${contact.id}?_method=PUT`)
+    
+    form(action=`/contacts/${contact.id}`, method='POST')
+      input(type='hidden', name='_method', value='PUT')
+      
       .form-group
         label(for='firstName') First Name
-        label(for="last Name") Last Name 
         input#firstName.form-control(type='text', name='firstName', value=contact.firstName, required)
-        input#LastName.form-control(type='text', name='LastName', value=contact LastName, required)
+      
+      .form-group
+        label(for='lastName') Last Name
+        input#lastName.form-control(type='text', name='lastName', value=contact.lastName, required)
+      
+      .form-group
+        label(for='email') Email
+        input#email.form-control(type='email', name='email', value=contact.email)
+      
+      .form-group
+        label(for='notes') Notes
+        textarea#notes.form-control(name='notes')= contact.notes
+      
       button.btn.btn-primary(type='submit') Update Contact

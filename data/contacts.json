@@ -1,13 +1,5 @@
 [
   {
-    "id": 1,
-    "firstName": "Chota",
-    "lastName": "Don",
-    "email": "Chota.Don@example.com",
-    "notes": "Sample note about Chota.",
-    "dateCreated": "2024-03-05T02:36:17.401Z"
-  },
-  {
     "id": 2,
     "firstName": "Moti",
     "lastName": "Kon",

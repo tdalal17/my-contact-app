@@ -1,11 +1,16 @@
 extends layout
 
 block content
-  h1= contact.firstName + ' ' + contact.lastName
-  p Email: #{contact.email}
-  p Notes: #{contact.notes}
-  p dateCreated #{contact.dateCreated}
-  form(method='POST', action=`/contacts/${contact.id}/delete`)
-    input(type='hidden', name='_method', value='DELETE')
-    
-    button(type='submit') Delete Contact
+  .container
+    h1= contact.firstName + ' ' + contact.lastName
+
+    p Email: #{contact.email}
+    p Notes: #{contact.notes}
+    p Date Created: #{contact.dateCreated}
+
+    a.btn.btn-secondary(href=`/contacts/${contact.id}/edit`) Edit
+
+    form(action=`/contacts/${contact.id}/delete`, method='POST')
+      button.btn.btn-danger(type='submit') Delete Contact
+
+    a.btn.btn-primary(href='/contacts') Back to Contacts
